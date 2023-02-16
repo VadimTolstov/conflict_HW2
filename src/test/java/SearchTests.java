@@ -5,15 +5,13 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
 public class SearchTests {
-    public static void main(String[] args) {
-        System.out.println("Hello !");
-    }
 
-//    @Test
-//void successfulSearchTest() {
-//    open ("https://www.google.com/");
-//    $("[name=q]").setValue("selenide").pressEnter();
-//    $("[id=search]").shouldHave(text("https://selenide.org"));
-//}
+
+    @Test
+void successfulSearchTest() {
+    open ("https://www.google.com/");
+    $("[name=q]").setValue("selenide").pressEnter();
+    $("[id=search]").shouldHave(text("https://selenide.org"));
+}
 
 }
